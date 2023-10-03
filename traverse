@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <conio.h>
+void accept(int a[], int size);
+void display(int a[], int size);
+int main() {
+    int la[10], n;
+    printf("Enter how many elements: ");
+    scanf("%d", &n);
+    printf("Enter array elements: ");
+    accept(la, n);
+    printf("Elements in the array are: ");
+    display(la, n);
+    
+    return 0;
+}
+void accept(int a[], int size) {
+    int index;
+    for(index = 0; index<size; index++) {
+        printf("Enter data: ");
+        scanf("%d", &a[index]);
+    }
+    return;
+}
+void display(int a[], int size) {
+    int index;
+    for(index = 0; index<size; index++) {
+        printf("%d", a[index]);
+    }
+    return;
+}
